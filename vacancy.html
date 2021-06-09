@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сибдорстрой дорожно-строительная компания</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="vacancy-header" id="vacancy-header">
+        <div class="vacancy-container"> 
+            <div class="header-logo">
+                <img src="img/logo/Sibdorstroi_w.png" alt="">
+            </div>   
+            <nav>
+                <ul class="nav-list" id="vacancy-menu">
+                    <li class="nav-item"><a href="#about" class="vacancy-nav-link">О компании</a></li>
+                    <li class="nav-item"><a href="#index.html" class="vacancy-nav-link-active" active>Вакансии</a></li>
+                    <li class="nav-item"><a href="#" class="vacancy-nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="#" class="vacancy-nav-link vacancy-nav-tel">+7 34469 341 05</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article class="vacancy-all">
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <th colspan="4" class="vacancy-title">Вакансии</th>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="table-category-driver">Водитель категории B, C</td>
+                    <td class="table-experience">с опытом работы от 3х лет</td>
+                    <td class="table-experience">полный рабочий день</td>
+                    <td class="table-payment">от 70 000 ₽</td>
+                </tr>
+            </table>
+            <div id="back-top">
+                <a href="#" onclick="return up()">ВВЕРХ</a>  
+            </div>
+        </div>    
+    </article>
+    <footer class="footer">
+            <div class="container">
+                <div class="footer-wraper">
+                    <p class="footer-copyright">© 2020, Сибдорстрой</p>
+                    <a class="footer-menu" href="#about">О компании</a>
+                    <a class="footer-menu" href="#vacancies">Вакансии</a>
+                    <a class="footer-menu" href="#">Контакты</a>
+                    <ul class="footer-contacts">
+                        <li class="contacts-item">
+                            <a class="contacts-link">628671, ХМАО-Югра, г. Лангепас, ул. Северная промзона, 77</a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contacts-link" href="tel:+73446934105">+7 34469 341 05</a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contacts-link contacts-grin" href="mailto:sds-langepas@mail.ru">sds-langepas@mail.ru</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+<!-- Плавность перехода по якорям -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 3000);
+            });
+    });
+    </script>
+<!-- Стрелка вверх -->    
+    <script type="text/javascript">
+        function up() {  
+            var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+        if(top > 0) {  
+            window.scrollBy(0,((top+100)/-20));  
+            t = setTimeout('up()',30);  
+        } else clearTimeout(t);  
+        return false;  
+    } 
+    </script>
+</body>
+</html>
+
+
+   

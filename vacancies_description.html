@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сибдорстрой дорожно-строительная компания</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="vacancy-header">
+        <div class="vacancy-container"> 
+            <div class="header-logo">
+                <img src="img/logo/Sibdorstroi_w.png" alt="">
+            </div>   
+            <nav>
+                <ul class="nav-list" id="vacancy-menu">
+                    <li class="nav-item"><a href="#about" class="vacancy-nav-link">О компании</a></li>
+                    <li class="nav-item"><a href="#index.html" class="vacancy-nav-link-active" active>Вакансии</a></li>
+                    <li class="nav-item"><a href="#" class="vacancy-nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="#" class="vacancy-nav-link vacancy-nav-tel">+7 34469 341 05</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article class="vacancy-all-descr">
+        <div class="container">
+            <div class="container-wrap">
+                <section class="vacancy-descr">
+                    <div class="container">
+                        <div class="vacancy-all-buttom">
+                            <img src="img/icon/arrow left vacancies.png" alt="">
+                            <a class="vacancies-all-link" href="#">Все вакансии</a>
+                        </div>
+                        <h2 class="vacancy-descr-title">Водитель категории B, C</h2>
+                        <p class="vacancy-payment">от 70 000 ₽</p>
+                        <div class="vacancy-experience-chart">
+                            <h4 class="vacancy-experience">Опыт:</h4>
+                            <p class="vacancy-experience-time">с опытом работы от 3х лет</p>
+                        </div>
+                        <div class="vacancy-experience-chart">
+                            <h4 class="vacancy-experience">График:</h4>
+                            <p class="vacancy-experience-time">полный рабочий день</p>
+                        </div>
+                        <div class="vacancy-conditions">
+                            <h4 class="vacancy-experience">Требования:</h4>
+                            <ul class="vacancy-conditions-list">
+                                <li class="vacancy-conditions-item"><span class="vacancy-conditions-item-text">обязательно наличие медицинского и психиатрического освидетельствования</span></li>
+                            </ul>
+                        </div>
+                        <div class="vacancy-conditions">
+                            <h4 class="vacancy-experience">Условия работы:</h4>
+                            <ul class="vacancy-conditions-list">
+                                <li class="vacancy-conditions-item"><span class="vacancy-conditions-item-text">Тюменская область г. Лангепас</span></li>
+                                <li class="vacancy-conditions-item"><span class="vacancy-conditions-item-text">официальное трудоустройство по ТК РФ</span></li>
+                                <li class="vacancy-conditions-item"><span class="vacancy-conditions-item-text">пенсионные начисления производятся</span></li>
+                                <li class="vacancy-conditions-item"><span class="vacancy-conditions-item-text">проезд на/с вахты и проживание оплачивается</span></li>
+                                <li class="vacancy-conditions-item"><span class="vacancy-conditions-item-text">белая зарплата</span></li>
+                            </ul>
+                        </div>
+                        <form action=""  method="post" class="application">
+                            <h3 class="title-form">Оставьте заявку или свяжитесь с нами по телефону<br> +7 34669 347 01, (Пн–Пт: с 8 до 17 ч, МСК+2 ч)</h3>
+                            <div class="form-information">
+                                <input class="form-input-inform" type="text" name="name" placeholder="Имя"  autofocus tabindex="1">
+                                <input class="form-input-inform" type="tel" name="phone" placeholder="Телефон"  pattern tabindex="2">
+                            </div>
+                            <div class="form-about-me">
+                                <textarea class="form-about-me-text" name="about-me" rows="15" cols="50" tabindex="3" maxlength="250">Коротко о себе</textarea>
+                            </div>
+                            <input class="form-submit" type="submit" name="submit" value="Отправить" tabindex="4">
+                        </form>
+                        <p class="application-message"></p>
+                        <div id="back-top">
+                        <a href="#" onclick="return up()">ВВЕРХ</a>  
+                    </div>
+                    </div> 
+                </section>
+                <div class="vacancy-icon">
+                    <img src="img/icon/big pin.png" alt="метка" width="30px">
+                </div>    
+            </div>    
+        </div>      
+    </article>
+    <footer class="footer">
+            <div class="container">
+                <div class="footer-wraper">
+                    <p class="footer-copyright">© 2020, Сибдорстрой</p>
+                    <a class="footer-menu" href="#about">О компании</a>
+                    <a class="footer-menu" href="#vacancies">Вакансии</a>
+                    <a class="footer-menu" href="#">Контакты</a>
+                    <ul class="footer-contacts">
+                        <li class="contacts-item">
+                            <a class="contacts-link">628671, ХМАО-Югра, г. Лангепас, ул. Северная промзона, 77</a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contacts-link" href="tel:+73446934105">+7 34469 341 05</a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contacts-link contacts-grin" href="mailto:sds-langepas@mail.ru">sds-langepas@mail.ru</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+<!-- Плавность перехода по якорям -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 3000);
+            });
+    });
+    </script>
+<!-- Стрелка вверх -->    
+    <script type="text/javascript">
+        function up() {  
+            var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+        if(top > 0) {  
+            window.scrollBy(0,((top+100)/-20));  
+            t = setTimeout('up()',30);  
+        } else clearTimeout(t);  
+        return false;  
+    } 
+    </script>
+</body>
+</html>
+
+
+   
